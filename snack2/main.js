@@ -2,42 +2,41 @@ const team = [
 
     {
         'nome' : 'roma',
-        'puntFatti' : 0,
+        'puntiFatti' : 0,
         'falliSubiti' : 0
     },
     {
         'nome' : 'lazio',
-        'puntFatti' : 0,
+        'puntiFatti' : 0,
         'falliSubiti' : 0
     },
     {
         'nome' : 'milan',
-        'puntFatti' : 0,
+        'puntiFatti' : 0,
         'falliSubiti' : 0
     },
     {
         'nome' : 'inter',
-        'puntFatti' : 0,
+        'puntiFatti' : 0,
         'falliSubiti' : 0
     },
     {
         'nome' : 'juve',
-        'puntFatti' : 0,
+        'puntiFatti' : 0,
         'falliSubiti' : 0
     },
 
 ];
 
 
-    const{puntFatti=[getRandomNumber(1,90)], falliSubiti=[getRandomNumber(1,90)]} = team;
 
-    console.log("punti fatti: "+puntFatti+ " falli subiti: "+falliSubiti)
     
 
-    for(let i=0; i<team.length; i++){
+     for(let i=0; i<team.length; i++){
+        team[i].puntiFatti = getRandomNumber(1,90);
+        team[i].falliSubiti = getRandomNumber(250,500);
         console.log(team[i]);
-    }
-
+     }
 
 
     function getRandomNumber(min, max){
